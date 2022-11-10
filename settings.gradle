@@ -5,12 +5,20 @@ pluginManagement {
         mavenCentral()
     }
 }
+
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File("${getRootProject().projectDir}/3d_module/unityLibrary")
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
     }
 }
 rootProject.name = "suit_up"
 include ':app'
+
