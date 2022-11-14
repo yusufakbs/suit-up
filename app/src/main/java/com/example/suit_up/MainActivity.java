@@ -1,7 +1,6 @@
 package com.example.suit_up;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.suit_up.UnityShowActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void open3DActivity (View view){
-        Intent intent = new Intent (this, UnityShowActivity.class);
+        Intent intent = new Intent (this, UnityModuleActivity.class);
         startActivity(intent);
     }
 }

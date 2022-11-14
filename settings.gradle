@@ -5,9 +5,8 @@ pluginManagement {
         mavenCentral()
     }
 }
-
 include ':unityLibrary'
-project(':unityLibrary').projectDir=new File("${getRootProject().projectDir}/3d_module/unityLibrary")
+project(':unityLibrary').projectDir=new File("${getRootProject().projectDir}\\unityModule\\unityLibrary")
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -15,7 +14,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         flatDir {
-            dirs "${project(':unityLibrary').projectDir}/libs"
+            dirs "${project(':unityLibrary').projectDir}\\libs"
         }
     }
 }
