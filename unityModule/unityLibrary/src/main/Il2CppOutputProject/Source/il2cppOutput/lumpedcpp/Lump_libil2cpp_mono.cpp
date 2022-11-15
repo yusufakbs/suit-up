@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\MonoPosixHelper.cpp"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\ThreadPool\ThreadPoolMonitorThread.cpp"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\ThreadPool\ThreadPoolWorkerThread.cpp"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\ThreadPool\threadpool-ms-io-poll.cpp"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\ThreadPool\threadpool-ms-io.cpp"
+#include "D:\hackathon_2022\suit-up\unityModule\unityLibrary\src\main\Il2CppOutputProject\IL2CPP\libil2cpp\mono\ThreadPool\threadpool-ms.cpp"
