@@ -2,16 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_first_fragment"
-            android:icon="@drawable/icon_one"
-            android:title="First" />
+            android:id="@+id/cloth_1"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
         <item
-            android:id="@+id/nav_second_fragment"
-            android:icon="@drawable/icon_two"
-            android:title="Second" />
+            android:id="@+id/cloth_2"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
         <item
-            android:id="@+id/nav_third_fragment"
-            android:icon="@drawable/icon_three"
-            android:title="Third" />
+            android:id="@+id/cloth_3"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/cloth_4"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/cloth_5"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/cloth_6"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/cloth_7"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/cloth_8"
+            android:icon="@drawable/t_shirt_64"
+            android:title="Cloth" />
+
     </group>
 </menu>
