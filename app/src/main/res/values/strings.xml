@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">suit_up</string>
     <string name="game_view_content_description">Game view</string>
+
     <string name="title_activity_navigation_sample">navigationSample</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -18,4 +19,8 @@
     <string name="cloth_2">Cloth_2</string>
     <string name="size_button_label">Size</string>
     <string name="view_label">View</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
