@@ -76,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_bg"
+        android:theme="@style/AppTheme2"
         android:text="Login"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
@@ -107,11 +108,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" SignUp"
-            android:textColor="@color/colorRed"></TextView>
+            android:textColor="@color/cardColor2"></TextView>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnFacebook"
+        android:theme="@style/AppTheme2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -132,6 +134,7 @@
 
     <Button
         android:id="@+id/btnGoogle"
+        android:theme="@style/AppTheme2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
