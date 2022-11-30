@@ -29,4 +29,17 @@
     <style name="Theme.Suit_up.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Suit_up.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--    <style name="Theme.App" parent="ThemeOverlay.Material3.FloatingActionButton.Primary">-->
+<!--        ...-->
+<!--        <item name="colorSecondary">@color/light_grayish_orange</item>-->
+<!--        <item name="colorOnSecondary">@color/light_grayish_orange</item>-->
+<!--        <item name="colorOnSurface">@color/light_grayish_orange</item>-->
+<!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>-->
+<!--    </style>-->
+
+<!--    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">-->
+<!--        <item name="cornerFamily">cut</item>-->
+<!--        <item name="cornerSize">4dp</item>-->
+<!--    </style>-->
 </resources>

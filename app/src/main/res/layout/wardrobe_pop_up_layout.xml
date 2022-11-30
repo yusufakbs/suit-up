@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal" >-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="Window test" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Window test" />-->
+<!--    </LinearLayout>-->
+    <TextView
+        android:id="@+id/alertbox_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="100"
+        >
+
+        <Button
+            android:id="@+id/cloth_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="48"
+            android:background="@color/cardview_dark_background"
+            android:text="@string/cloth_1"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:onClick="switchClothes"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <Button
+            android:id="@+id/cloth_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="48"
+            android:background="#808080"
+            android:text="@string/cloth_2"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:onClick="switchClothes"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

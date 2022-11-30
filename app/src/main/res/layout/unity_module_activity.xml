@@ -14,7 +14,45 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:background="#ff00ff15"
-        android:orientation="vertical" />
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/closer_view_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:contentDescription="@string/fab_content_desc"
+            android:text="@string/view_label"
+            app:icon="@drawable/zoom_in"
+            tools:ignore="RtlHardcoded" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            android:text="@string/wardrobe"
+            app:icon="@drawable/clothes_hanger"
+            tools:ignore="RtlHardcoded" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_size_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/size_button_label"
+            tools:ignore="RtlHardcoded" />
+
+    </FrameLayout>
 
 
     <com.google.android.material.navigation.NavigationView
