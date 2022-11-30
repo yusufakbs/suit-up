@@ -12,5 +12,6 @@
 /captures
 .externalNativeBuild
 .cxx
+.rasa
 local.properties
 
