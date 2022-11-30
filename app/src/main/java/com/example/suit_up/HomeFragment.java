@@ -17,7 +17,6 @@ public class HomeFragment extends Fragment {
 
     public void open3DActivity(View view) {
         Intent intent = new Intent (HomeFragment.this.getActivity(), UnityModuleActivity.class);
-
         startActivity(intent);
     }
 }
