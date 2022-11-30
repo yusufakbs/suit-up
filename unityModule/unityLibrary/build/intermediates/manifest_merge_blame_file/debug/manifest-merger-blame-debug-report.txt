@@ -5,121 +5,8 @@
 5
 6    <uses-sdk
 7        android:minSdkVersion="22"
-<<<<<<< HEAD
-<<<<<<< HEAD
-7-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml
-8        android:targetSdkVersion="28" />
-8-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml
-9
-10    <uses-feature android:glEsVersion="0x00020000" />
-10-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:19:3-52
-10-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:19:17-49
-11    <uses-feature
-11-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:20:3-88
-12        android:name="android.hardware.touchscreen"
-12-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:20:17-60
-13        android:required="false" />
-13-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:20:61-85
-14    <uses-feature
-14-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:21:3-99
-15        android:name="android.hardware.touchscreen.multitouch"
-15-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:21:17-71
-16        android:required="false" />
-16-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:21:72-96
-17    <uses-feature
-17-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:22:3-108
-18        android:name="android.hardware.touchscreen.multitouch.distinct"
-18-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:22:17-80
-19        android:required="false" />
-19-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:22:81-105
-20
-21    <application>
-21-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:3:3-18:17
-22        <activity
-22-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
-23            android:name="com.unity3d.player.UnityPlayerActivity"
-23-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:15-68
-24            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-24-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:204-385
-25            android:exported="true"
-25-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:111-134
-26            android:hardwareAccelerated="false"
-26-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:421-456
-27            android:launchMode="singleTask"
-27-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:172-203
-28            android:resizeableActivity="false"
-28-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:386-420
-29            android:screenOrientation="fullUser"
-29-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:135-171
-30            android:theme="@style/UnityThemeSelector" >
-30-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:4:69-110
-31            <intent-filter>
-31-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
-32                <action android:name="android.intent.action.MAIN" />
-32-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-32-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:6:17-58
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-34-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:7:19-66
-35            </intent-filter>
-36
-37            <meta-data
-37-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:9:7-82
-38                android:name="unityplayer.UnityActivity"
-38-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:9:18-58
-39                android:value="true" />
-39-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:9:59-79
-40            <meta-data
-40-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:10:7-78
-41                android:name="android.notch_support"
-41-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:10:18-54
-42                android:value="true" />
-42-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:10:55-75
-43        </activity>
-44
-45        <meta-data
-45-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-46            android:name="unity.splash-mode"
-46-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-47            android:value="0" />
-47-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:12:49-66
-48        <meta-data
-48-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-49            android:name="unity.splash-enable"
-49-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-50            android:value="True" />
-50-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:13:51-71
-51        <meta-data
-51-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-52            android:name="unity.launch-fullscreen"
-52-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:14:16-54
-53            android:value="True" />
-53-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:14:55-75
-54        <meta-data
-54-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-55            android:name="unity.allow-resizable-window"
-55-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-56            android:value="False" />
-56-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:15:60-81
-57        <meta-data
-57-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:16:5-81
-58            android:name="notch.config"
-58-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:16:16-43
-59            android:value="portrait|landscape" />
-59-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:16:44-78
-60        <meta-data
-60-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:5-101
-61            android:name="unity.build-id"
-61-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:16-45
-62            android:value="e7a03036-d297-4918-92c4-12631fddb9de" />
-62-->D:\hackathon_2022\clone3\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:46-98
-=======
-7-->C:\Users\yusakbas\Desktop\test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml
-=======
 7-->C:\Users\yusakbas\Desktop\end-test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml
->>>>>>> 645ab75 (main page, login page and register page added)
-8        android:targetSdkVersion="30" />
+8        android:targetSdkVersion="28" />
 8-->C:\Users\yusakbas\Desktop\end-test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml
 9
 10    <uses-feature android:glEsVersion="0x00020000" />
@@ -224,12 +111,7 @@
 61            android:name="unity.build-id"
 61-->C:\Users\yusakbas\Desktop\end-test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:16-45
 62            android:value="e7a03036-d297-4918-92c4-12631fddb9de" />
-<<<<<<< HEAD
-62-->C:\Users\yusakbas\Desktop\test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:46-98
->>>>>>> e007369 (User interface draft)
-=======
 62-->C:\Users\yusakbas\Desktop\end-test\suit-up\unityModule\unityLibrary\src\main\AndroidManifest.xml:17:46-98
->>>>>>> 645ab75 (main page, login page and register page added)
 63    </application>
 64
 65</manifest>
