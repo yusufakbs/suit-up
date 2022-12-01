@@ -162,6 +162,6 @@
         app:layout_constraintStart_toStartOf="@+id/inputUsername"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.504"
-        app:srcCompat="@drawable/splashscreen" />
+        app:srcCompat="@drawable/login_page_splash_screen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
