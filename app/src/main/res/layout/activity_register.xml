@@ -160,6 +160,7 @@
 
     <Button
         android:id="@+id/btnRegister"
+        android:theme="@style/AppTheme2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg"

@@ -42,7 +42,6 @@
 <!--        <item name="cornerFamily">cut</item>-->
 <!--        <item name="cornerSize">4dp</item>-->
 <!--    </style>-->
-
     <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#B9B094</item>
         <item name="colorPrimaryDark">#B9B094</item>

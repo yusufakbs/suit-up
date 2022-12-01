@@ -1,5 +1,7 @@
 package com.example.suit_up;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,4 +16,8 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
+    public void open3DActivity(View view) {
+        Intent intent = new Intent (HomeFragment.this.getActivity(), UnityModuleActivity.class);
+        startActivity(intent);
+    }
 }

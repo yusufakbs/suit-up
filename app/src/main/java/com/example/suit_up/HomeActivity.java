@@ -36,21 +36,21 @@ public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment selectFragment = null;
-            switch (item.getItemId()){
-                case R.id.home:
-                    selectFragment = new HomeFragment();
-                    break;
-                case R.id.account:
-                    selectFragment = new AccountFragment();
-                    break;
-            }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectFragment).commit();
-            return true;
-        }
-    };
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    Fragment selectFragment = null;
+                    switch (item.getItemId()){
+                        case R.id.home:
+                            selectFragment = new HomeFragment();
+                            break;
+                        case R.id.account:
+                            selectFragment = new UserProfileFragment();
+                            break;
+                    }
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectFragment).commit();
+                    return true;
+                }
+            };
 
     private final ActivityResultLauncher<ScanOptions> qrCodeLauncher = registerForActivityResult(
             new ScanContract(),
