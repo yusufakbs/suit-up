@@ -28,6 +28,8 @@
             android:layout_column="0"
             android:layout_gravity="bottom"
             android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
             android:onClick="open3DActivity"
             app:cardBackgroundColor="@color/cardColor1"
             app:cardCornerRadius="20dp"
