@@ -18,7 +18,8 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         android:columnCount="2"
-        android:rowCount="2">
+        android:rowCount="2"
+        android:layout_margin="10dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/imageCard"

@@ -9,6 +9,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,6 +17,7 @@ import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
 public class HomeActivity extends AppCompatActivity {
+    FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,10 @@ public class HomeActivity extends AppCompatActivity {
 
         BottomNavigationView  bottomNav = findViewById(R.id.bottomNavigationView);
         bottomNav.setOnItemSelectedListener(navListener);
+
+        getSupportFragmentManager().beginTransaction()
+               .replace(R.id.fragment_container, new HomeFragment())
+               .commit();
 
         FloatingActionButton btn = findViewById(R.id.qrScannerBtn);
         btn.setOnClickListener(new View.OnClickListener(){
