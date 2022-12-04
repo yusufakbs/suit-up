@@ -89,4 +89,8 @@ public class UnityModuleActivity extends AppCompatActivity{
 
         }
     }
+
+    public void zoomInOutClick(View view) {
+        UnityPlayer.UnitySendMessage("mainCamera", "changeCameraState", "Test");
+    }
 }
