@@ -73,7 +73,7 @@ public class UnityModuleActivity extends AppCompatActivity{
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
         boolean focusable = true; // lets taps outside the popup also dismiss it
-        final PopupWindow popupWindow = new PopupWindow(popupView, 800, 800, focusable);
+        final PopupWindow popupWindow = new PopupWindow(popupView, 850, 1500, focusable);
 
         // show the popup window
         // which view you pass in doesn't matter, it is only used for the window tolken
