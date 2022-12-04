@@ -234,6 +234,8 @@ struct CameraU5BU5D_tAF84B9EC9AF40F1B6294BCEBA82A1AD123A9D001;
 struct CancellationTokenRegistrationU5BU5D_t864BA2E1E6485FDC593F17F7C01525F33CCE7910;
 // System.Char[]
 struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
+// UnityEngine.ClothSkinningCoefficient[]
+struct ClothSkinningCoefficientU5BU5D_t32F3F0A4885FC814D3ACA376ECED0B2C272C0FAB;
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t1ACD262B1EA44CD48E2039381DE96847F203E62B;
 // Mono.Globalization.Unicode.Contraction[]
@@ -330,6 +332,8 @@ struct UInt16U5BU5D_t42D35C587B07DCDBCFDADF572C6D733AE85B2A67;
 struct UInt32U5BU5D_tCF06F1E9E72E0302C762578FF5358CC523F2A2CF;
 // System.UInt64[]
 struct UInt64U5BU5D_t7C6E32D10F47677C1CEF3C30F4E4CE95B3A633E2;
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4;
 // Mono.Globalization.Unicode.CodePointIndexer/TableRange[]
 struct TableRangeU5BU5D_t529A3048AC157A0702514DB337164442AF1530C7;
 // System.Collections.Hashtable/bucket[]
@@ -434,6 +438,8 @@ struct ChannelData_tEA64A2F1AEEC413430B61C6C7C4A1652EFDD9827;
 struct Char_tFF60D8E7E89A20BE2294A003734341BD1DF43E14;
 // UnityEngine.CharacterController
 struct CharacterController_tCCF68621C784CCB3391E0C66FE134F6F93DD6C2E;
+// UnityEngine.Cloth
+struct Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C;
 // System.Globalization.CodePageDataItem
 struct CodePageDataItem_t09A62F57142BF0456C8F414898A37E79BCC9F09E;
 // Mono.Globalization.Unicode.CodePointIndexer
@@ -1021,6 +1027,15 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+
+// <Module>
+struct U3CModuleU3E_tFDCAFCBB4B3431CFF2DC4D3E03FBFDF54EFF7E9A 
+{
+public:
+
+public:
+};
+
 
 // <Module>
 struct U3CModuleU3E_t5180CDC42F8AF2D32040BEE0252DF171180CBA41 
@@ -20490,6 +20505,34 @@ public:
 };
 
 
+// UnityEngine.ClothSkinningCoefficient
+struct ClothSkinningCoefficient_t53026DBAA8BE4ACF447027627AEF76056FBFC5F0 
+{
+public:
+	// System.Single UnityEngine.ClothSkinningCoefficient::maxDistance
+	float ___maxDistance_0;
+	// System.Single UnityEngine.ClothSkinningCoefficient::collisionSphereDistance
+	float ___collisionSphereDistance_1;
+
+public:
+	inline static int32_t get_offset_of_maxDistance_0() { return static_cast<int32_t>(offsetof(ClothSkinningCoefficient_t53026DBAA8BE4ACF447027627AEF76056FBFC5F0, ___maxDistance_0)); }
+	inline float get_maxDistance_0() const { return ___maxDistance_0; }
+	inline float* get_address_of_maxDistance_0() { return &___maxDistance_0; }
+	inline void set_maxDistance_0(float value)
+	{
+		___maxDistance_0 = value;
+	}
+
+	inline static int32_t get_offset_of_collisionSphereDistance_1() { return static_cast<int32_t>(offsetof(ClothSkinningCoefficient_t53026DBAA8BE4ACF447027627AEF76056FBFC5F0, ___collisionSphereDistance_1)); }
+	inline float get_collisionSphereDistance_1() const { return ___collisionSphereDistance_1; }
+	inline float* get_address_of_collisionSphereDistance_1() { return &___collisionSphereDistance_1; }
+	inline void set_collisionSphereDistance_1(float value)
+	{
+		___collisionSphereDistance_1 = value;
+	}
+};
+
+
 // UnityEngine.Color
 struct Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 
 {
@@ -26682,35 +26725,35 @@ struct Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E
 {
 public:
 	// System.Single UnityEngine.Vector3::x
-	float ___x_0;
+	float ___x_2;
 	// System.Single UnityEngine.Vector3::y
-	float ___y_1;
+	float ___y_3;
 	// System.Single UnityEngine.Vector3::z
-	float ___z_2;
+	float ___z_4;
 
 public:
-	inline static int32_t get_offset_of_x_0() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___x_0)); }
-	inline float get_x_0() const { return ___x_0; }
-	inline float* get_address_of_x_0() { return &___x_0; }
-	inline void set_x_0(float value)
+	inline static int32_t get_offset_of_x_2() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___x_2)); }
+	inline float get_x_2() const { return ___x_2; }
+	inline float* get_address_of_x_2() { return &___x_2; }
+	inline void set_x_2(float value)
 	{
-		___x_0 = value;
+		___x_2 = value;
 	}
 
-	inline static int32_t get_offset_of_y_1() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___y_1)); }
-	inline float get_y_1() const { return ___y_1; }
-	inline float* get_address_of_y_1() { return &___y_1; }
-	inline void set_y_1(float value)
+	inline static int32_t get_offset_of_y_3() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___y_3)); }
+	inline float get_y_3() const { return ___y_3; }
+	inline float* get_address_of_y_3() { return &___y_3; }
+	inline void set_y_3(float value)
 	{
-		___y_1 = value;
+		___y_3 = value;
 	}
 
-	inline static int32_t get_offset_of_z_2() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___z_2)); }
-	inline float get_z_2() const { return ___z_2; }
-	inline float* get_address_of_z_2() { return &___z_2; }
-	inline void set_z_2(float value)
+	inline static int32_t get_offset_of_z_4() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E, ___z_4)); }
+	inline float get_z_4() const { return ___z_4; }
+	inline float* get_address_of_z_4() { return &___z_4; }
+	inline void set_z_4(float value)
 	{
-		___z_2 = value;
+		___z_4 = value;
 	}
 };
 
@@ -26718,105 +26761,105 @@ struct Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields
 {
 public:
 	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___zeroVector_3;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___zeroVector_5;
 	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___oneVector_4;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___oneVector_6;
 	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___upVector_5;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___upVector_7;
 	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___downVector_6;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___downVector_8;
 	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___leftVector_7;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___leftVector_9;
 	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___rightVector_8;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___rightVector_10;
 	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___forwardVector_9;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___forwardVector_11;
 	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___backVector_10;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___backVector_12;
 	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___positiveInfinityVector_11;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___positiveInfinityVector_13;
 	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___negativeInfinityVector_12;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___negativeInfinityVector_14;
 
 public:
-	inline static int32_t get_offset_of_zeroVector_3() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___zeroVector_3)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_zeroVector_3() const { return ___zeroVector_3; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_zeroVector_3() { return &___zeroVector_3; }
-	inline void set_zeroVector_3(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_zeroVector_5() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___zeroVector_5)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_zeroVector_5() const { return ___zeroVector_5; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_zeroVector_5() { return &___zeroVector_5; }
+	inline void set_zeroVector_5(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___zeroVector_3 = value;
+		___zeroVector_5 = value;
 	}
 
-	inline static int32_t get_offset_of_oneVector_4() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___oneVector_4)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_oneVector_4() const { return ___oneVector_4; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_oneVector_4() { return &___oneVector_4; }
-	inline void set_oneVector_4(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_oneVector_6() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___oneVector_6)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_oneVector_6() const { return ___oneVector_6; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_oneVector_6() { return &___oneVector_6; }
+	inline void set_oneVector_6(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___oneVector_4 = value;
+		___oneVector_6 = value;
 	}
 
-	inline static int32_t get_offset_of_upVector_5() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___upVector_5)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_upVector_5() const { return ___upVector_5; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_upVector_5() { return &___upVector_5; }
-	inline void set_upVector_5(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_upVector_7() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___upVector_7)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_upVector_7() const { return ___upVector_7; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_upVector_7() { return &___upVector_7; }
+	inline void set_upVector_7(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___upVector_5 = value;
+		___upVector_7 = value;
 	}
 
-	inline static int32_t get_offset_of_downVector_6() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___downVector_6)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_downVector_6() const { return ___downVector_6; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_downVector_6() { return &___downVector_6; }
-	inline void set_downVector_6(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_downVector_8() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___downVector_8)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_downVector_8() const { return ___downVector_8; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_downVector_8() { return &___downVector_8; }
+	inline void set_downVector_8(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___downVector_6 = value;
+		___downVector_8 = value;
 	}
 
-	inline static int32_t get_offset_of_leftVector_7() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___leftVector_7)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_leftVector_7() const { return ___leftVector_7; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_leftVector_7() { return &___leftVector_7; }
-	inline void set_leftVector_7(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_leftVector_9() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___leftVector_9)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_leftVector_9() const { return ___leftVector_9; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_leftVector_9() { return &___leftVector_9; }
+	inline void set_leftVector_9(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___leftVector_7 = value;
+		___leftVector_9 = value;
 	}
 
-	inline static int32_t get_offset_of_rightVector_8() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___rightVector_8)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_rightVector_8() const { return ___rightVector_8; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_rightVector_8() { return &___rightVector_8; }
-	inline void set_rightVector_8(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_rightVector_10() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___rightVector_10)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_rightVector_10() const { return ___rightVector_10; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_rightVector_10() { return &___rightVector_10; }
+	inline void set_rightVector_10(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___rightVector_8 = value;
+		___rightVector_10 = value;
 	}
 
-	inline static int32_t get_offset_of_forwardVector_9() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___forwardVector_9)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_forwardVector_9() const { return ___forwardVector_9; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_forwardVector_9() { return &___forwardVector_9; }
-	inline void set_forwardVector_9(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_forwardVector_11() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___forwardVector_11)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_forwardVector_11() const { return ___forwardVector_11; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_forwardVector_11() { return &___forwardVector_11; }
+	inline void set_forwardVector_11(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___forwardVector_9 = value;
+		___forwardVector_11 = value;
 	}
 
-	inline static int32_t get_offset_of_backVector_10() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___backVector_10)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_backVector_10() const { return ___backVector_10; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_backVector_10() { return &___backVector_10; }
-	inline void set_backVector_10(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_backVector_12() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___backVector_12)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_backVector_12() const { return ___backVector_12; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_backVector_12() { return &___backVector_12; }
+	inline void set_backVector_12(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___backVector_10 = value;
+		___backVector_12 = value;
 	}
 
-	inline static int32_t get_offset_of_positiveInfinityVector_11() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___positiveInfinityVector_11)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_positiveInfinityVector_11() const { return ___positiveInfinityVector_11; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_positiveInfinityVector_11() { return &___positiveInfinityVector_11; }
-	inline void set_positiveInfinityVector_11(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_positiveInfinityVector_13() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___positiveInfinityVector_13)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_positiveInfinityVector_13() const { return ___positiveInfinityVector_13; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_positiveInfinityVector_13() { return &___positiveInfinityVector_13; }
+	inline void set_positiveInfinityVector_13(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___positiveInfinityVector_11 = value;
+		___positiveInfinityVector_13 = value;
 	}
 
-	inline static int32_t get_offset_of_negativeInfinityVector_12() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___negativeInfinityVector_12)); }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_negativeInfinityVector_12() const { return ___negativeInfinityVector_12; }
-	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_negativeInfinityVector_12() { return &___negativeInfinityVector_12; }
-	inline void set_negativeInfinityVector_12(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	inline static int32_t get_offset_of_negativeInfinityVector_14() { return static_cast<int32_t>(offsetof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields, ___negativeInfinityVector_14)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_negativeInfinityVector_14() const { return ___negativeInfinityVector_14; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_negativeInfinityVector_14() { return &___negativeInfinityVector_14; }
+	inline void set_negativeInfinityVector_14(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
-		___negativeInfinityVector_12 = value;
+		___negativeInfinityVector_14 = value;
 	}
 };
 
@@ -59254,8 +59297,27 @@ public:
 struct Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
 {
 public:
+	// System.Single UnityEngine.Cloth::<useContinuousCollision>k__BackingField
+	float ___U3CuseContinuousCollisionU3Ek__BackingField_4;
+	// System.Boolean UnityEngine.Cloth::<selfCollision>k__BackingField
+	bool ___U3CselfCollisionU3Ek__BackingField_5;
 
 public:
+	inline static int32_t get_offset_of_U3CuseContinuousCollisionU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C, ___U3CuseContinuousCollisionU3Ek__BackingField_4)); }
+	inline float get_U3CuseContinuousCollisionU3Ek__BackingField_4() const { return ___U3CuseContinuousCollisionU3Ek__BackingField_4; }
+	inline float* get_address_of_U3CuseContinuousCollisionU3Ek__BackingField_4() { return &___U3CuseContinuousCollisionU3Ek__BackingField_4; }
+	inline void set_U3CuseContinuousCollisionU3Ek__BackingField_4(float value)
+	{
+		___U3CuseContinuousCollisionU3Ek__BackingField_4 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CselfCollisionU3Ek__BackingField_5() { return static_cast<int32_t>(offsetof(Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C, ___U3CselfCollisionU3Ek__BackingField_5)); }
+	inline bool get_U3CselfCollisionU3Ek__BackingField_5() const { return ___U3CselfCollisionU3Ek__BackingField_5; }
+	inline bool* get_address_of_U3CselfCollisionU3Ek__BackingField_5() { return &___U3CselfCollisionU3Ek__BackingField_5; }
+	inline void set_U3CselfCollisionU3Ek__BackingField_5(bool value)
+	{
+		___U3CselfCollisionU3Ek__BackingField_5 = value;
+	}
 };
 
 
@@ -63321,6 +63383,147 @@ struct ThrowStub_t0243BF83C6DC8911C3DE1D3F1C924D0C6BEF2098  : public ObjectDispo
 public:
 
 public:
+};
+
+
+// cameraMovementController
+struct cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// System.Single cameraMovementController::positionChangeSpeed
+	float ___positionChangeSpeed_4;
+	// System.Single cameraMovementController::rotationChangeSpeed
+	float ___rotationChangeSpeed_5;
+	// UnityEngine.Vector3 cameraMovementController::cameraBasePosition
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___cameraBasePosition_6;
+	// UnityEngine.Vector3 cameraMovementController::cameraBaseRotation
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___cameraBaseRotation_7;
+	// UnityEngine.Vector3 cameraMovementController::cameraTargetPosition
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___cameraTargetPosition_8;
+	// UnityEngine.Vector3 cameraMovementController::cameraTargetRotation
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___cameraTargetRotation_9;
+	// System.Boolean cameraMovementController::zoom_in
+	bool ___zoom_in_10;
+
+public:
+	inline static int32_t get_offset_of_positionChangeSpeed_4() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___positionChangeSpeed_4)); }
+	inline float get_positionChangeSpeed_4() const { return ___positionChangeSpeed_4; }
+	inline float* get_address_of_positionChangeSpeed_4() { return &___positionChangeSpeed_4; }
+	inline void set_positionChangeSpeed_4(float value)
+	{
+		___positionChangeSpeed_4 = value;
+	}
+
+	inline static int32_t get_offset_of_rotationChangeSpeed_5() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___rotationChangeSpeed_5)); }
+	inline float get_rotationChangeSpeed_5() const { return ___rotationChangeSpeed_5; }
+	inline float* get_address_of_rotationChangeSpeed_5() { return &___rotationChangeSpeed_5; }
+	inline void set_rotationChangeSpeed_5(float value)
+	{
+		___rotationChangeSpeed_5 = value;
+	}
+
+	inline static int32_t get_offset_of_cameraBasePosition_6() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___cameraBasePosition_6)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_cameraBasePosition_6() const { return ___cameraBasePosition_6; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_cameraBasePosition_6() { return &___cameraBasePosition_6; }
+	inline void set_cameraBasePosition_6(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	{
+		___cameraBasePosition_6 = value;
+	}
+
+	inline static int32_t get_offset_of_cameraBaseRotation_7() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___cameraBaseRotation_7)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_cameraBaseRotation_7() const { return ___cameraBaseRotation_7; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_cameraBaseRotation_7() { return &___cameraBaseRotation_7; }
+	inline void set_cameraBaseRotation_7(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	{
+		___cameraBaseRotation_7 = value;
+	}
+
+	inline static int32_t get_offset_of_cameraTargetPosition_8() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___cameraTargetPosition_8)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_cameraTargetPosition_8() const { return ___cameraTargetPosition_8; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_cameraTargetPosition_8() { return &___cameraTargetPosition_8; }
+	inline void set_cameraTargetPosition_8(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	{
+		___cameraTargetPosition_8 = value;
+	}
+
+	inline static int32_t get_offset_of_cameraTargetRotation_9() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___cameraTargetRotation_9)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_cameraTargetRotation_9() const { return ___cameraTargetRotation_9; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_cameraTargetRotation_9() { return &___cameraTargetRotation_9; }
+	inline void set_cameraTargetRotation_9(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	{
+		___cameraTargetRotation_9 = value;
+	}
+
+	inline static int32_t get_offset_of_zoom_in_10() { return static_cast<int32_t>(offsetof(cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C, ___zoom_in_10)); }
+	inline bool get_zoom_in_10() const { return ___zoom_in_10; }
+	inline bool* get_address_of_zoom_in_10() { return &___zoom_in_10; }
+	inline void set_zoom_in_10(bool value)
+	{
+		___zoom_in_10 = value;
+	}
+};
+
+
+// clothConstraintController
+struct clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// UnityEngine.ClothSkinningCoefficient[] clothConstraintController::clothConstraints
+	ClothSkinningCoefficientU5BU5D_t32F3F0A4885FC814D3ACA376ECED0B2C272C0FAB* ___clothConstraints_4;
+	// UnityEngine.Cloth clothConstraintController::myCloth
+	Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * ___myCloth_5;
+	// UnityEngine.Cloth clothConstraintController::myClothVerticesGroup
+	Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * ___myClothVerticesGroup_6;
+	// UnityEngine.Vector3[] clothConstraintController::clothVertices
+	Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* ___clothVertices_7;
+	// UnityEngine.Vector3[] clothConstraintController::clothVerticesGroup
+	Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* ___clothVerticesGroup_8;
+
+public:
+	inline static int32_t get_offset_of_clothConstraints_4() { return static_cast<int32_t>(offsetof(clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51, ___clothConstraints_4)); }
+	inline ClothSkinningCoefficientU5BU5D_t32F3F0A4885FC814D3ACA376ECED0B2C272C0FAB* get_clothConstraints_4() const { return ___clothConstraints_4; }
+	inline ClothSkinningCoefficientU5BU5D_t32F3F0A4885FC814D3ACA376ECED0B2C272C0FAB** get_address_of_clothConstraints_4() { return &___clothConstraints_4; }
+	inline void set_clothConstraints_4(ClothSkinningCoefficientU5BU5D_t32F3F0A4885FC814D3ACA376ECED0B2C272C0FAB* value)
+	{
+		___clothConstraints_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___clothConstraints_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_myCloth_5() { return static_cast<int32_t>(offsetof(clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51, ___myCloth_5)); }
+	inline Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * get_myCloth_5() const { return ___myCloth_5; }
+	inline Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C ** get_address_of_myCloth_5() { return &___myCloth_5; }
+	inline void set_myCloth_5(Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * value)
+	{
+		___myCloth_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___myCloth_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_myClothVerticesGroup_6() { return static_cast<int32_t>(offsetof(clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51, ___myClothVerticesGroup_6)); }
+	inline Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * get_myClothVerticesGroup_6() const { return ___myClothVerticesGroup_6; }
+	inline Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C ** get_address_of_myClothVerticesGroup_6() { return &___myClothVerticesGroup_6; }
+	inline void set_myClothVerticesGroup_6(Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C * value)
+	{
+		___myClothVerticesGroup_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___myClothVerticesGroup_6), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_clothVertices_7() { return static_cast<int32_t>(offsetof(clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51, ___clothVertices_7)); }
+	inline Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* get_clothVertices_7() const { return ___clothVertices_7; }
+	inline Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4** get_address_of_clothVertices_7() { return &___clothVertices_7; }
+	inline void set_clothVertices_7(Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* value)
+	{
+		___clothVertices_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___clothVertices_7), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_clothVerticesGroup_8() { return static_cast<int32_t>(offsetof(clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51, ___clothVerticesGroup_8)); }
+	inline Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* get_clothVerticesGroup_8() const { return ___clothVerticesGroup_8; }
+	inline Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4** get_address_of_clothVerticesGroup_8() { return &___clothVerticesGroup_8; }
+	inline void set_clothVerticesGroup_8(Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* value)
+	{
+		___clothVerticesGroup_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___clothVerticesGroup_8), (void*)value);
+	}
 };
 
 #ifdef __clang__
@@ -72229,21 +72432,23 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1521[18] =
 	Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461_StaticFields::get_offset_of_zeroMatrix_16(),
 	Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461_StaticFields::get_offset_of_identityMatrix_17(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1522[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1522[15] = 
 {
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_x_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_y_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_z_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_zeroVector_3(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_oneVector_4(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_upVector_5(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_downVector_6(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_leftVector_7(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_rightVector_8(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_forwardVector_9(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_backVector_10(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_positiveInfinityVector_11(),
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_negativeInfinityVector_12(),
+	0,
+	0,
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_x_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_y_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E::get_offset_of_z_4() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_zeroVector_5(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_oneVector_6(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_upVector_7(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_downVector_8(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_leftVector_9(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_rightVector_10(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_forwardVector_11(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_backVector_12(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_positiveInfinityVector_13(),
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_StaticFields::get_offset_of_negativeInfinityVector_14(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1523[5] = 
 {
@@ -73380,6 +73585,34 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1889[2] =
 {
 	AudioSampleProvider_tD8B613D55D09D6CE86B851A5D8F33560FFCC705B::get_offset_of_sampleFramesAvailable_0(),
 	AudioSampleProvider_tD8B613D55D09D6CE86B851A5D8F33560FFCC705B::get_offset_of_sampleFramesOverflow_1(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1891[2] = 
+{
+	ClothSkinningCoefficient_t53026DBAA8BE4ACF447027627AEF76056FBFC5F0::get_offset_of_maxDistance_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	ClothSkinningCoefficient_t53026DBAA8BE4ACF447027627AEF76056FBFC5F0::get_offset_of_collisionSphereDistance_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1892[2] = 
+{
+	Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C::get_offset_of_U3CuseContinuousCollisionU3Ek__BackingField_4(),
+	Cloth_tABB9ECE708DB52F01B3F79544D2987F75F9D038C::get_offset_of_U3CselfCollisionU3Ek__BackingField_5(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1895[7] = 
+{
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_positionChangeSpeed_4(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_rotationChangeSpeed_5(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_cameraBasePosition_6(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_cameraBaseRotation_7(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_cameraTargetPosition_8(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_cameraTargetRotation_9(),
+	cameraMovementController_t55276BE35650959C18B6B6261EFFCC5FB8231A9C::get_offset_of_zoom_in_10(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1896[5] = 
+{
+	clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51::get_offset_of_clothConstraints_4(),
+	clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51::get_offset_of_myCloth_5(),
+	clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51::get_offset_of_myClothVerticesGroup_6(),
+	clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51::get_offset_of_clothVertices_7(),
+	clothConstraintController_t35FF689486555EA567453FFCEC92D9BB1F3B0B51::get_offset_of_clothVerticesGroup_8(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
