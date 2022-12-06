@@ -23,6 +23,10 @@ import androidx.cardview.widget.CardView;
 public class UnityModuleActivity extends AppCompatActivity{
     private UnityPlayer mUnityPlayer;
     private FloatingActionButton fab;
+    private ExtendedFloatingActionButton sizeS_FAB;
+    private ExtendedFloatingActionButton sizeM_FAB;
+    private ExtendedFloatingActionButton sizeL_FAB;
+    boolean isFABOpen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,38 +41,43 @@ public class UnityModuleActivity extends AppCompatActivity{
 
         FrameLayout frameLayout = (FrameLayout) findViewById(R.id.unityFrameLayout);
         ExtendedFloatingActionButton e_fab = (ExtendedFloatingActionButton) findViewById(R.id.extended_fab);
-        ExtendedFloatingActionButton fab = (ExtendedFloatingActionButton) findViewById(R.id.extended_size_button);
         e_fab.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openPopUpWardrobe(v);
             }
         });
 
-//        ScrollView wardrobeView = (ScrollView) findViewById(R.layout.wardrobe_pop_up_layout);
-//        CardView unityCardView = (CardView) war.findViewById(R.id.cloth_1_size_s);
-//        unityCardView.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view) {
-//                UnityPlayer.UnitySendMessage("ClothManager", "activate_cloth_1_size_s", "Test");
-//            }
-//        });
-
-
         ExtendedFloatingActionButton closer_view_fab = (ExtendedFloatingActionButton) findViewById(R.id.closer_view_fab);
 //        fab.setVisibility(View.GONE);
 
+        ExtendedFloatingActionButton sizeFAB = (ExtendedFloatingActionButton) findViewById(R.id.extended_size_button);
+        sizeS_FAB = (ExtendedFloatingActionButton) findViewById(R.id.size_s_button);
+        sizeM_FAB = (ExtendedFloatingActionButton) findViewById(R.id.size_m_button);
+        sizeL_FAB = (ExtendedFloatingActionButton) findViewById(R.id.size_l_button);
+        sizeFAB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                if(!isFABOpen){
+                    showFABMenu(view);
+                }else{
+                    closeFABMenu(view);
+                }
+            }
+        });
+
+        sizeS_FAB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                UnityPlayer.UnitySendMessage("cloth_1_size_s", "activateCloth", "Text");
+            }
+        });
+
+        sizeM_FAB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                UnityPlayer.UnitySendMessage("cloth_1_size_s", "deactivateCloth", "Text");
+            }
+        });
 
         LayoutParams layoutParameters = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         frameLayout.addView(mUnityPlayer.getView(), 0, layoutParameters);
-
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         mUnityPlayer.windowFocusChanged(true);
         mUnityPlayer.resume();
@@ -76,12 +85,8 @@ public class UnityModuleActivity extends AppCompatActivity{
     }
 
     public void openPopUpWardrobe(View view){
-        // inflate the layout of the popup window
-        LayoutInflater inflater = (LayoutInflater)
-                getSystemService(LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.wardrobe_pop_up_layout, null);
-
-        // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
         boolean focusable = true; // lets taps outside the popup also dismiss it
@@ -96,19 +101,32 @@ public class UnityModuleActivity extends AppCompatActivity{
                 popupWindow.dismiss();
             }
         });
+
+        popupWindow.getContentView().findViewById(R.id.cloth_1_size_m).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+//                UnityPlayer.UnitySendMessage("ClothManager", "activate_cloth_1_size_m", "Test");
+                popupWindow.dismiss();
+            }
+        });
     }
 
-    public void switchClothes(View view) {
-
-        if (view.getId() == R.id.cloth_1) {
-//            UnityPlayer.UnitySendMessage("cloth_3", "dummyMethod", null);
-        } else if (view.getId() == R.id.cloth_2) {
-//            UnityPlayer.UnitySendMessage("cloth_3", "dummyMethod2", null);
-
-        }
-    }
 
     public void zoomInOutClick(View view) {
         UnityPlayer.UnitySendMessage("mainCamera", "changeCameraState", "Test");
+    }
+
+    private void showFABMenu(View view){
+        isFABOpen=true;
+        sizeS_FAB.animate().translationY(-getResources().getDimension(R.dimen.standard_55));
+        sizeM_FAB.animate().translationY(-getResources().getDimension(R.dimen.standard_105));
+        sizeL_FAB.animate().translationY(-getResources().getDimension(R.dimen.standard_155));
+    }
+
+    private void closeFABMenu(View view){
+        isFABOpen=false;
+        sizeS_FAB.animate().translationY(0);
+        sizeM_FAB.animate().translationY(0);
+        sizeL_FAB.animate().translationY(0);
     }
 }

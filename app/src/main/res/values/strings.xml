@@ -18,6 +18,9 @@
     <string name="cloth_1">Cloth_1</string>
     <string name="cloth_2">Cloth_2</string>
     <string name="size_button_label">Size</string>
+    <string name="size_s_button">S</string>
+    <string name="size_m_button">M</string>
+    <string name="size_l_button">L</string>
     <string name="view_label">View</string>
 
     <!-- TODO: Remove or change this placeholder text -->

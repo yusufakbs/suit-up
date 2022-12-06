@@ -56,7 +56,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/view2"
+            android:id="@+id/cloth_1_size_m"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
             android:layout_height="170dp"
