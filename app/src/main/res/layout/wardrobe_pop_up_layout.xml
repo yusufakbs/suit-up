@@ -7,7 +7,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,8 +14,9 @@
         android:id="@+id/idGVcourses"
         android:horizontalSpacing="6dp"
         android:columnCount="2"
-        android:verticalSpacing="6dp"
-        >
+        android:background="#FEFEFE"
+        android:verticalSpacing="6dp">
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cloth_1_size_s"
             android:layout_width="0dp"
@@ -29,11 +29,6 @@
             android:focusable="true"
             app:cardCornerRadius="20dp"
             app:cardElevation="20dp">
-
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp"
-            android:clickable="true"
-            android:focusable="true">
 
 
             <LinearLayout
