@@ -18,16 +18,23 @@
         android:verticalSpacing="6dp"
         >
         <androidx.cardview.widget.CardView
-            android:id="@+id/view1"
+            android:id="@+id/cloth_1_size_s"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
             android:layout_height="140dp"
             android:layout_margin="15dp"
             app:cardBackgroundColor="#b9b094"
+
             android:clickable="true"
             android:focusable="true"
             app:cardCornerRadius="20dp"
             app:cardElevation="20dp">
+
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,7 +63,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/view2"
+            android:id="@+id/cloth_1_size_m"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
             android:layout_height="140dp"

@@ -10,6 +10,9 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 /unityModule/unityLibrary/src/main/Il2CppOutputProject
+/unityModule/unityLibrary/build
+/unityModule/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/
+/unityModule/unityLibrary/src/main/Il2CppOutputProject/IL2CPP/build
 .DS_Store
 /build
 /captures
