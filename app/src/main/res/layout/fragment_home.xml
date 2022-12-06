@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/homelayout"
+    android:background="@drawable/home_page_background2"
     tools:context=".HomeFragment"
     android:layout_marginBottom="50dp"
     >
@@ -22,9 +22,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/imageCard"
             android:layout_width="0dp"
-            android:layout_height="135dp"
+            android:layout_height="120dp"
             android:layout_columnWeight="1"
-            android:layout_gravity="bottom"
+            android:layout_gravity="fill_horizontal|bottom"
             android:layout_margin="20dp"
             android:clickable="true"
             android:focusable="true"
@@ -58,9 +58,10 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/videoCard"
-            android:layout_width="155dp"
-            android:layout_height="135dp"
-            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal|bottom"
             android:layout_margin="20dp"
             app:cardBackgroundColor="@color/cardColor2"
             app:cardCornerRadius="20dp"
@@ -92,9 +93,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/denemeCard"
             android:layout_width="0dp"
-            android:layout_height="135dp"
+            android:layout_height="120dp"
             android:layout_columnWeight="1"
-            android:layout_gravity="bottom"
+            android:layout_gravity="fill_horizontal|bottom"
             android:layout_margin="20dp"
             app:cardBackgroundColor="@color/cardColor3"
             app:cardCornerRadius="20dp"
@@ -125,9 +126,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/testCard"
-            android:layout_width="155dp"
-            android:layout_height="135dp"
-
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
             android:layout_margin="20dp"
             app:cardBackgroundColor="@color/cardColor4"
             app:cardCornerRadius="20dp"
